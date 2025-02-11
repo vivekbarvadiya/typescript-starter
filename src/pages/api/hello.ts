@@ -5,5 +5,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
     return res.status(200).json({ message: "TypeScript" });
   } else if (req.method === "POST") {
     return res.status(200).json({ message: "TypeScript" });
+  } else {
+    return res.status(500).json({ message: "request not found" });
   }
 }
