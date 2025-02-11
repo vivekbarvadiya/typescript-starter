@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import TypeScript from "@/components/TypeScript";
 import TypeProp from "@/components/TypeProp";
 import Fetch2 from "@/components/Fetch2";
+import ServerActions from "@/components/SeverActions";
+import AuthNext from "@/components/AuthNext";
+import Profile from "@/components/Profile";
 // import FetchApis from "@/components/FetchApis";
 
 const geistSans = Geist({
@@ -25,8 +28,17 @@ export default function Home() {
 
       {/* <FetchApis/> */}
 
-        {/* fetch, usestate, useeffect */}
+      {/* fetch, usestate, useeffect */}
       <Fetch2 />
+
+      {/* Server Side Actions (only in typescript because typescript is server side and type inferer.) */}
+      <ServerActions />
+
+      {/* Next Auth Authentication  */}
+      {/* <AuthNext/> */}
+
+      {/* Api call catching using swr(stale while revalidate) */}
+      <Profile/>
     </div>
   );
 }
