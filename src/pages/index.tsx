@@ -35,7 +35,7 @@ export default function Home() {
       <ServerActions />
 
       {/* Next Auth Authentication  */}
-      <AuthNext />
+      {/* <AuthNext /> */}
 
       {/* Api call catching using swr(stale while revalidate) */}
       {/* <Profile/> */}
